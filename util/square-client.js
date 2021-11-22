@@ -6,7 +6,6 @@ const LocationInfo = require("../models/location-info");
 const env = process.env.NODE_ENV;
 const accessToken = process.env[`SQUARE_ACCESS_TOKEN`]
 const squareApplicationId = process.env[`SQUARE_APPLICATION_ID`]
-
 // Set Square credentials
 const config = {
   accessToken,

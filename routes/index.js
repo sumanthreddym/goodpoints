@@ -28,7 +28,6 @@ router.get("/", async (req, res, next) => {
     if(loyaltyAccountId){
       loyaltyRewardInfo = await getLoyaltyRewardInformation(loyaltyAccountId);
     }
-
     // Renders index view, with catalog and location information
     res.render("index", {
       items: new CatalogList(objects).items,
