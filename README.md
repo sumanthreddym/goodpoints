@@ -22,7 +22,8 @@ Brands that allow their customers to give to a cause they care about should expe
 
 ## How does it help Square's sellers and businesses?
 
-Consumers are increasingly expecting that companies utilize their position to make a difference, and rewarding customers with charity donations may help you build more meaningful relationships and demonstrate that you're a purpose-driven company.
+Consumers are increasingly expecting that companies utilize their position to make a difference, and rewarding customers to use their points to make charity donations can help you build more meaningful relationships and demonstrate that you're a purpose-driven company.
+
 There are two advantages to including donations in your reward program:
 
 #### 1. Boost your brand's image
@@ -31,14 +32,32 @@ It acts as a constant reminder to your consumers that your company is committed 
 #### 2. Encourage more customers to sign up for your rewards program.
 It also encourages more consumers to sign up for your loyalty program, resulting in more purpose-driven purchases, more real connections, and higher customer lifetime value.
 
-## What it does
+## How it works?
 
-## How we built it
+- Square's merchants and businesses should enroll in Square's Loyalty program to use this product. 
+- After a Square merchant enrolls in Square's Loyalty program, they can enroll their business on Goodpoints to allow their customers to use their loyalty points for making donations to non-profits, causes and charities that they care about. Optionally, merchants can add their own choices of non-profits. Merchants also need to choose how many dollars each point is equivalent to.
+- Goodpoints creates a unique URL and QR code for the business or merchants. Merchants can give this URL to their customers, which can be used by the customers to access Merchant specific Goodpoints site.
+- Customers use the link to visit Goodpoints site, where they can login with their mobile number connected to their loyalty account.
+- Customers use their points to donate to charities of their choice. 
+- Customer receives a confirmation about the donation. Customers also can check their previous donation transactions made on Goodpoints.
 
-## Challenges we ran into
+## How I built it
 
-## Accomplishments that we're proud of
+I used Square's Loyalty API and Customer API to build Goodpoints web application. Goodpoints uses Square's Loyalty API to fetch a customer's point balance and allow customers to donate their points to causes and charities that both customers and businesses care about.
 
-## What we learned
+## Challenges I ran into
+
+While thinking about this idea, I initially thought that businesses wouldn't be willing to use this kind of a loyalty platform. Then, I started my research on how brands could build customer engagement by connecting their loyalty programs and donations. It believe this sort of social loyalty platform is essential for sustainable growth of all modern businesses.
+
+## What I learnt and Accomplishments I'm proud of
+
+This was the first time I used Square APIs. It was quite an inspiration to learn how Square plays a vital role in enabling every business to have access to financial tools. I learnt more about the need for businesses to make social impact to stay relevant. 
+
+I love the app that I built and hope that it enables Square's businesses not only to strengthen relationships with their customers but also allow Square's customers to make a lasting impact to the ecosystem that they operate in.
 
 ## What's next for Goodpoints
+- Feature for users to automatically enroll for a charity of their choice so that all points that a user earns are automatically sent to the charity.
+- Feature to allow merchants to offer gift cards to customers on Goodpoints which customers can use to send to charities or friends.
+- Feature for customers to redeem their loyalty points for gift items from the merchant's catalog.
+- Allow customers to use loyalty points to make purchases at other small businesses in the community.
+- Allow customer to use loyalty points to pay tips to cashiers, waiters and other employees instead of redeeming points for themselves.
