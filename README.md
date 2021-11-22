@@ -8,6 +8,10 @@ Goodpoints is a social good loyalty platform built using Square Loyalty API that
 
 These days, the significance of building real and lasting customer loyalty goes without question. Many businesses and brands, on the other hand, are struggling to stay relevant as customers move away from transactional interactions with their favorite brands in search of new ways to connect with their own drive to do more, to do more for everyone. Businesses are being encouraged to take things to the next level by engaging and connecting with their members in increasingly meaningful and personal ways. Square is used by businesses of all size. "How can we strengthen relationships with our consumers and communities at the same time?" is a question that should be on the minds of most merchants and businesses that use Square. Well, Goodpoints platform could be the solution.
 
+  
+![Customers use the link to visit Goodpoints site, where they can login with their mobile number connected to their loyalty account.](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/064/datas/original.png)
+
+
 ### I'm a business who uses Square. Will my customers use their points to donate to charity rather than buying a product for themselves?
 
 While traditional redemption components such as gift cards, merchandise and cash continue to play an important role, adopting newer, more compelling redemption strategies and options which include social good components in loyalty programs will provide businesses with the competitive advantage they need to stay ahead of the curve and respond to the rapidly changing consumer mindset. Social Good Loyalty is a real revolution that is being driven by a generation of people who truly want to take pride in the products they buy, the companies with whom they align, and to feel empowered to support their local communities. 
@@ -38,8 +42,20 @@ There are two advantages to including donations in your reward program:
 - After a Square merchant enrolls in Square's Loyalty program, they can enroll their business on Goodpoints to allow their customers to use their loyalty points for making donations to non-profits, causes and charities that they care about. Optionally, merchants can add their own choices of non-profits. Merchants also need to choose how many dollars each point is equivalent to.
 - Goodpoints creates a unique URL and QR code for the business or merchants. Merchants can give this URL to their customers, which can be used by the customers to access Merchant specific Goodpoints site.
 - Customers use the link to visit Goodpoints site, where they can login with their mobile number connected to their loyalty account.
-- Customers use their points to donate to charities of their choice. 
-- Customer receives a confirmation about the donation. Customers also can check their previous donation transactions made on Goodpoints.
+  
+    ![Customers use the link to visit Goodpoints site, where they can login with their mobile number connected to their loyalty account.](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/067/datas/original.png)
+
+- Customers use their points to donate to charities of their choice.
+  
+  ![Customers use their points to donate to charities of their choice. ](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/066/datas/original.png)
+
+- Customer receives a confirmation about the donation. 
+  
+  ![Customer receives a confirmation about the donation.](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/065/datas/original.png)
+
+- Customers also can check their previous donation transactions made on Goodpoints.
+
+    ![Customers also can check their previous donation transactions made on Goodpoints.](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/068/datas/original.png)
 
 ## How I built it
 
