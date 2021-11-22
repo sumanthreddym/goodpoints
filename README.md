@@ -11,6 +11,11 @@ These days, the significance of building real and lasting customer loyalty goes 
   
 ![Customers use the link to visit Goodpoints site, where they can login with their mobile number connected to their loyalty account.](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/750/064/datas/original.png)
 
+### Sample use-case examples
+
+Large businesses that use Square such as Shake Shack could use Goodpoints platform to allow their customers to use their Square loyalty points to donate to causes and charities that they care about. This will not only increase customer trust and loyalty for the Shake Shack brand, but also make customers feel good.
+
+A small local restaruant can use Goodpoints to allow customers to make donations using their points to local causes and non-profits that are working on local issues. This will help the restaurnt in gaining the trust of not just the customer but also the local community.
 
 ### I'm a business who uses Square. Will my customers use their points to donate to charity rather than buying a product for themselves?
 
@@ -66,6 +71,39 @@ There are two advantages to including donations in your reward program:
 
 I used Square's Loyalty API and Customer API to build Goodpoints web application. Goodpoints uses Square's Loyalty API to fetch a customer's point balance and allow customers to donate their points to causes and charities that both customers and businesses care about.
 
+
+## How to use the app
+Follow the steps listed below to use the web application:
+1. Go to the link https://fathomless-brushlands-77696.herokuapp.com/
+2. Use the test mobile number 4255551111 to login
+3. Click on check in to login with your rewards account and see your point balance.
+4. Now, you can scroll down the page to look for a list of non-profits that you can donate to.
+5. Click on a non-profit whom you would like to donate to and enter the amount you would like to donate.
+6. Click "Confirm donation" to confirm your donation. You will see a confirmation page after your donation is processed successfully. Your point balance is also updated.
+7. Click "My Transactions" button on homepage to see all your Goodpoints transactions made using the Square loyalty points.
+
+If you'd like to instead run your own version of the app on your local system or a cloud server, follow the steps mentioned below:
+1. Clone the Github repository using the following command
+    ```
+    git clone https://github.com/sumanthreddym/goodpoints.git
+    ```
+2. Change directory using the following command
+    ```
+    cd goodpoints
+    ```
+3. Go to Square dashboard and create a loyalty program in your sandbox account.
+4. Copy your SQUARE_APPLICATION_ID and SQUARE_ACCESS_TOKEN of your sandbox environment. Create a file called .env and paste the credentials there using the following format:
+   ```
+    SQUARE_APPLICATION_ID=your-application-id
+    SQUARE_ACCESS_TOKEN=your-access-token
+    ```
+5. Run the folowing commands to install dependencies and start the server in sandbox mode:  
+    ```
+    npm install
+    npm test
+    ```
+6. Open your browser and go to localhost:3000 to view the website. Then follow the steps mentioned previously to use the web application.
+
 ## Challenges I ran into
 
 While thinking about this idea, I initially thought that businesses wouldn't be willing to use this kind of a loyalty platform. Then, I started my research on how brands could build customer engagement by connecting their loyalty programs and donations. It believe this sort of social loyalty platform is essential for sustainable growth of all modern businesses.
@@ -75,6 +113,7 @@ While thinking about this idea, I initially thought that businesses wouldn't be 
 This was the first time I used Square APIs. It was quite an inspiration to learn how Square plays a vital role in enabling every business to have access to financial tools. I learnt more about the need for businesses to make social impact to stay relevant. 
 
 I love the app that I built and hope that it enables Square's businesses not only to strengthen relationships with their customers but also allow Square's customers to make a lasting impact to the ecosystem that they operate in.
+
 
 ## What's next for Goodpoints
 - Feature for users to automatically enroll for a charity of their choice so that all points that a user earns are automatically sent to the charity.
