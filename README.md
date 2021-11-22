@@ -25,6 +25,11 @@ Brands can utilize social good loyalty platforms such as Goodpoints to build str
 
 According to Motista statistics, emotional connections translate into a bigger percentage of consumer spending, with loyal consumers paying twice as much and having a 300 percent higher lifetime value. We are currently witnessing a boom in community spirit, with consumers and companies more eager than ever to support social, environmental, and community activities. Brands that allow their customers to give to a cause they care about should expect to see higher levels of emotional engagement and loyalty because they are tapping into something they already care about – their favorite charity. 
 
+Below figure shows statistics on donations made by Americans to charity. Observe how many millenials gave to charity and how much more likely millenials might give monthly over a large donation:
+
+![Stats](https://thewisemarketer.com/wp-content/uploads/2020/08/427bn-to-Charity.png.webp)
+
+If customers were to donate money from their own pockets to charity(See above image), don't you think they will donate a portion of their loyalty points? Since millenials care about the causes, don't you think they will care about businesses who care for their causes! 
 
 ## How does it help Square's sellers and businesses?
 
@@ -73,7 +78,9 @@ I love the app that I built and hope that it enables Square's businesses not onl
 
 ## What's next for Goodpoints
 - Feature for users to automatically enroll for a charity of their choice so that all points that a user earns are automatically sent to the charity.
+- Publish the app on Square marketplace so that all Square's sellers can use them.
 - Feature to allow merchants to offer gift cards to customers on Goodpoints which customers can use to send to charities or friends.
+- Add feature for users to share their donations on social media platforms. This will allow more visibility for Square's businesses and serve as free marketing for them.
 - Feature for customers to redeem their loyalty points for gift items from the merchant's catalog.
 - Allow customers to use loyalty points to make purchases at other small businesses in the community.
 - Allow customer to use loyalty points to pay tips to cashiers, waiters and other employees instead of redeeming points for themselves.
