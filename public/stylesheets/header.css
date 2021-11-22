@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+body {
+  font-size: 16px;
+  color: #404040;
+  font-family: Montserrat, sans-serif;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 300px;
+}
+
+.panel {
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.panel .panel-title {
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--dark-gray);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.panel .panel-subtitle {
+    margin-top: 0;
+    line-height: 28px;
+    font-size: 16px;
+    color:var(--neutral-gray);
+}
+
+.panel-field {
+    position: relative;
+    margin-top: 24px;
+}
+
+.panel-input {
+    width: 80%;
+    height: 56px;
+    display: flex;
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 14px 16px;
+}
+
+.panel-left {
+    width:456px;
+    margin-right: 12px;
+}
+
+.order-summary {
+    width: 376px;
+    /* height: 278px; */
+    margin-left: 12px;
+    float: left;
+}
+
+.order-summary .panel {
+    padding: 24px 32px 32px 32px;
+    margin-bottom: 24px;
+}
+
+.line-items {
+    border-bottom: 1px solid var(--light-gray);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.line-item {
+    margin-bottom: 24px;
+}
+
+.line-item .left { max-width: 192px; }
+
+.line-item img {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    margin: -2px 8px 0 0;
+}
+
+.bottom-label {
+    color: var(--neutral-gray);
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab-content {
+    display:flex;
+    justify-content: center;
+}
+
+.dropdown {
+    width: 100%;
+    height: 56px;
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 4px;
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+}
+
+.form-button {
+    color: var(--white);
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.time-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-option {
+    color: var(--neutral-gray);
+    background-color: var(--white);
+    width: 102px;
+    padding: 14px 0px;
+    border: 1px solid var(--light-gray);
+    text-align: center;
+    border-radius: 4px;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.caret-button {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    line-height: 10px;
+    pointer-events: none;
+    border-left: 1px solid var(--light-gray);
+    padding: 22px 16px 22px 16px;
+}
+.address{
+    text-align: right;
+    justify-content: space-between;
+}
+input[type=radio]{
+    display: none;
+}
+input[type=radio]:checked + .time-option{
+    background: var(--neutral-gray);
+    color: var(--white);
+    border: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin: 4px 4px;
+}
+
+.order-extra-info {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: right;
+}
+.confirmation {
+    padding-bottom: 24px;
+}
+.input--validity-visible:valid {
+    background-color: var(--success);
+}
+.input--validity-visible:invalid {
+    background-color: var(--warning);
+}
+
+.reward-button {
+    color: #fff;
+    font-weight: 700;
+    background-color: #ff5757;
+    border-color: #ff5757;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.reward-button:last-child {
+    margin-bottom: 0px;
+}
+
+.reward-button:disabled {
+    color: var(--placeholder-gray);
+    background-color: var(--white);
+    border-color: var(--placeholder-gray);
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#message {
+  width: 100%;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: #BF0020;
+  text-align: center;
+}
+
+#message:empty:before {
+  content: "\200b";
+
+}

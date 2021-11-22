@@ -1,0 +1,26 @@
+extends layout
+block append styles  
+  link(rel='stylesheet', href='/stylesheets/transactions.css')
+block content
+  div(style="float:right")
+          a(href="/?locationId="+locationInfo.id+"&loyaltyAccountId="+loyaltyRewardInfo.loyaltyAccountId, style="color:#fff;background-color:#fa5757;padding:10px;font-weight:400; border-radius:5px;") Return to Home
+  div(style="text-align:center;")
+      div
+        h1(class="panel-title",style="font-weight:400;margin-bottom:20px;") TRANSACTIONS
+        
+      div()
+        table.content-table
+          thead
+            tr
+              th DonationId
+              th Points redeemed
+              th Reason
+              th Transaction time
+          tbody
+            each transaction in transactions
+              tr
+                td #{transaction.id}
+                td #{-transaction.adjust_points.points}
+                td #{transaction.adjust_points.reason}
+                td #{transaction.created_at}
+

@@ -1,0 +1,75 @@
+extends layout
+block append styles
+  link(rel='stylesheet', href='/stylesheets/products.css')
+
+block append scripts
+  script(type='text/javascript' src="/js/products-page.js")
+block content
+  div(style="text-align:center;")
+    
+    
+
+    div(class="panel clearfix")
+      if (!loyaltyRewardInfo.loyaltyAccountId)
+          include ./includes/attach-loyalty-account.pug
+      else
+          include ./includes/redeem-loyalty-reward.pug
+
+  div(class="products")
+    each item in items
+      div(id=item.itemObjectId ,class='product',data-toggle="modal",data-target="#modal"+item.itemObjectId)
+        if (loyaltyRewardInfo.loyaltyAccountId)
+          div(onclick="openModal(this)")
+            .card
+              .banner
+                img(src=item.imageUrl, style="max-width:100%;max-height:100%;") 
+              h2.name #{item.name}
+              .title Charity
+              
+                .actions
+                  .follow-info
+                  .follow-btn
+                      button() Donate
+                    
+
+              .desc #{item.description}
+        else 
+            div()
+            .card
+              .banner
+                img(src=item.imageUrl, style="max-width:100%;max-height:100%;") 
+              h2.name #{item.name}
+              .title Charity
+              
+                .actions
+                  .follow-info
+                  .follow-btn
+                      button() Login above to donate
+                    
+
+              .desc #{item.description}
+
+        div(id="modal-"+item.itemObjectId, class="modal clearfix")
+          button(class='close', onclick="onCloseModalClick()") Close
+          img(class='modal-image',src=item.imageUrl)
+          div(class='product-info')
+            h2(class='product-title') #{item.name}
+            p(class='product-description') #{item.description}
+            div(class='product-meta')
+              h2(class='productCost') Available points:
+                span(class="green")  #{loyaltyRewardInfo.balance}
+              
+              
+              form(action='redeem-points', method='post')
+                input(name='itemName',type='hidden',value=item.name,style='display: none')
+                input(name='itemId',type='hidden',value=item.itemObjectId,style='display: none')
+                input(name='locationId',type='hidden',value=locationInfo.id,style='display: none')
+                if (loyaltyRewardInfo.loyaltyAccountId)
+                    input(name='accountId',type='hidden',value=loyaltyRewardInfo.loyaltyAccountId,style='display: none')
+                div(class="panel-field")  
+                    label(class="sq-label") Enter points you want to donate:
+                    input(class="panel-input", name='redeemedPoints',placeholder="Enter Points") 
+                div(class="panel-field")  10 Goodpoints equals 1$ in donation
+                button(type='submit',class="product-purchase") Confirm donation
+
+  div(id="veil" class="veil")

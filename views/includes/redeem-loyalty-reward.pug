@@ -1,0 +1,25 @@
+scripts
+    script(type="text/javascript").
+        function validateAndSubmit(rewardId) {
+            document.getElementById("rewardTierId").value = rewardId;
+            document.forms["select-loyalty-reward"].submit();
+        }
+form(id="select-loyalty-reward" action='/redeem-loyalty-reward', method='post')
+    //- div(class="panel-field")
+    //-     each rewardTier in loyaltyRewardInfo.availableRewardTiers
+    //-         button(class="reward-button" type="button" onclick=`validateAndSubmit("${rewardTier.id}")`) #{rewardTier.name} for #{rewardTier.points} points
+    //-     each rewardTier in loyaltyRewardInfo.unavailableRewardTiers
+    //-         button(class="reward-button" disabled type="button") #{rewardTier.name} for #{rewardTier.points} points
+    input(name='locationId', type='hidden', value=locationInfo.locationId)
+    input(name='idempotencyKey', type='hidden', value=idempotencyKey)
+    input(name='loyaltyAccountId', type='hidden', value=loyaltyRewardInfo.loyaltyAccountId)
+    input(id='rewardTierId', name='rewardTierId', type='hidden')
+div() 
+    h3(class="panel-title") Total Goodpoints you have accured from your purchases at #{locationInfo.storeName.toUpperCase()}
+div(style="font-weight: 800; font-size: 4em; text-align:center;margin-top: 20px; margin-bottom:20px;color: #ff5757;") #{loyaltyRewardInfo.balance}
+div(class="panel-field")
+
+div(style="margin-top: 10px;")
+    div(class="bottom-label") Use your points to donate for the following causes
+div(style="margin-top:20px;margin-bottom:10px;")
+    a(class="reward-button", href="transactions/?locationId="+locationInfo.id+"&loyaltyAccountId="+loyaltyRewardInfo.loyaltyAccountId, style="padding:10px; border-radius: 5px;") My Transactions

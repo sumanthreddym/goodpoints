@@ -1,0 +1,15 @@
+extends layout
+block append styles  
+  link(rel='stylesheet', href='/stylesheets/checkout.css')
+block content
+  div(class="panel clearfix", style="text-align:center; padding: 30px;")
+      h1(class="panel-title") Donation Confirmation
+      div()
+        h3() You #{donationInfo.adjustPoints.reason}. Your donation of #{-donationInfo.adjustPoints.points} points is equal to #{parseInt(-donationInfo.adjustPoints.points)/10} $
+        div() You are awesome. Why? Because, you just used your points to donate for a great cause. We are proud to have you as our customer. All your donations are sent directly to the non profit that you donated.
+
+
+      div(class="panel-field")
+          a(class="form-button", href="/?locationId="+locationInfo.id+"&loyaltyAccountId="+loyaltyRewardInfo.loyaltyAccountId, style="background-color:#ff5757") Go to home page
+      div()
+        h3() Shop more at #{locationInfo.storeName} store to earn more points. 
