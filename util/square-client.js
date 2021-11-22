@@ -1,7 +1,6 @@
 const { Client } = require("square");
 require('dotenv').config()
 
-const OrderInfo = require("../models/order-info");
 const LocationInfo = require("../models/location-info");
 
 const env = process.env.NODE_ENV;
@@ -23,33 +22,6 @@ const {
   paymentsApi,
   loyaltyApi
 } = new Client(config)
-
-/**
- * Description:
- * Retrieve the order and location informaiton that are widely used in many pages in this example.
- *
- * @param {*} orderId The id of the order
- * @param {*} locationId The id of the location where the order belongs to
- *
- * @returns object{ orderInfo, locationInfo }
- */
-const retrieveOrderAndLocation = async  (orderId, locationId) => {
-  const { result : { orders } } = await ordersApi.batchRetrieveOrders({
-    locationId,
-    orderIds: [orderId],
-  });
-  const { result: { location } } = await locationsApi.retrieveLocation(locationId);
-  if (!orders || orders.length == 0 || !location) {
-    const error = new Error("Cannot find order");
-    error.status = 404;
-    throw error;
-  }
-
-  return {
-    orderInfo: new OrderInfo(orders[0]),
-    locationInfo: new LocationInfo(location),
-  };
-}
 
 /**
  * Description:
@@ -231,7 +203,6 @@ module.exports = {
   paymentsApi,
   ordersApi,
   loyaltyApi,
-  retrieveOrderAndLocation,
   getDefaultLoyaltyProgram,
   getLoyaltyAccountByPhoneNumber,
   getLoyaltyRewardInformation,
